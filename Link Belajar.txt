@@ -1,3 +1,0 @@
-- https://github.com/getify/You-Dont-Know-JS
-- https://eloquentjavascript.net/02_program_structure.html#c_FiZBrHz3CX
-- https://courses.wesbos.com/account/magic/5e4df29bd9cc83646520209b
