@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 </head>
-<body>
+<body style="background-color:#f0f8ff">
 @section('konten')
 <div class="container">
             <table class="table">
@@ -36,10 +36,20 @@
                     </tbody>
                   </table>
     </div>
-    <footer class="blog-footer">
-      <p><a href="/">Kembali ke Menu Utama</a>
-      <a href="#">Kembali ke Atas</a></p>
-    </footer>
+<nav class="navbar navbar-expand-md navbar-white" style="background-color:red">
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary" href="/provinsi">Lihat Provinsi di Indonesia?</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link btn btn-warning" href="/dunia">Lihat di Dunia?</a>
+          </li>
+        </ul>
+</div>
+</nav>
 @endsection
 </body>
 </html>

@@ -1,16 +1,21 @@
+@extends ('index')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
-@section('judul_halaman', 'Info Covid-19 di Dunia')
+ @section('judul_halaman', 'Info Covid-19 di Provinsi')
+
+<title>Info Covid-19 di Provinsi di Indonesia</title>
   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 </head>
-<body>
+<body style="background-color:#f0f8ff">
 @section ('konten')
+<br>
+<p class = "text-center">Untuk Informasi Detil dari Beberapa Provinsi, <a href="/detilprovinsi">Klik Disini</a></p>
 <div class="container">
             <table class="table">
                     <thead class="thead-dark">
@@ -41,9 +46,20 @@
                     </tbody>
                   </table>
     </div>
-    <footer class="blog-footer">
-      <p><a href="/">Kembali ke Menu Utama</a>
-      <a href="#">Kembali ke Atas</a></p>
-    </footer>
+<nav class="navbar navbar-expand-md navbar-white" style="background-color:red">
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn btn-danger" href="/indonesia">Lihat di Indonesia?</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link btn btn-warning" href="/dunia">Lihat di Dunia?</a>
+          </li>
+        </ul>
+</div>
+</nav>
+@endsection
 </body>
 </html>
